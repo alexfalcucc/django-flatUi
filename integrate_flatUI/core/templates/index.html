@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,11 +9,11 @@
     <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Loading Bootstrap -->
-    <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'flat-ui/dist/css/vendor/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Loading Flat UI -->
-    <link href="dist/css/flat-ui.css" rel="stylesheet">
-    <link href="docs/assets/css/demo.css" rel="stylesheet">
+    <link href="{% static 'flat-ui/dist/css/flat-ui.css' %}" rel="stylesheet">
+    <link href="{% static 'flat-ui/docs/assets/css/demo.css' %}" rel="stylesheet">
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -361,7 +362,7 @@
       		</div>
       		<div class="demo-type-example">
 	      		<span class="demo-text-note">Image</span>
-	          <img src="docs/assets/img/example-image.jpg" alt="example-image" class="img-rounded img-responsive">
+	          <img src="{% static 'flat-ui/docs/assets/img/example-image.jpg' %}" alt="example-image" class="img-rounded img-responsive">
 	          <p class="img-comment"><strong>Note:</strong> gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
       		</div>
       		<div class="demo-type-example">
@@ -503,20 +504,20 @@
       <h3 class="demo-panel-title">Icons <small>(14)</small></h3>
       <div class="demo-illustrations">
         <div class="demo-content">
-          <div><img src="img/icons/svg/toilet-paper.svg" alt="Toilet-Paper"></div>
-          <div><img src="img/icons/svg/gift-box.svg" alt="Gift-Box"></div>
-          <div><img src="img/icons/svg/pencils.svg" alt="Pensils"></div>
-          <div><img src="img/icons/svg/clipboard.svg" alt="Clipboard"></div>
-          <div><img src="img/icons/svg/retina.svg" alt="Retina"></div>
-          <div><img src="img/icons/svg/compas.svg" alt="Compas"></div>
-          <div><img src="img/icons/svg/map.svg" alt="Map"></div>
-          <div><img src="img/icons/svg/chat.svg" alt="Chat"></div>
-          <div><img src="img/icons/svg/mail.svg" alt="Mail"></div>
-          <div><img src="img/icons/svg/book.svg" alt="Book"></div>
-          <div><img src="img/icons/svg/calendar.svg" alt="Calendar"></div>
-          <div><img src="img/icons/svg/paper-bag.svg" alt="Pocket"></div>
-          <div><img src="img/icons/svg/clocks.svg" alt="Watches"></div>
-          <div><img src="img/icons/svg/loop.svg" alt="Infinity-Loop"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/toilet-paper.svg' %}" alt="Toilet-Paper"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/gift-box' %}.svg" alt="Gift-Box"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/pencils.svg' %}" alt="Pensils"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/clipboard.svg' %}" alt="Clipboard"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/retina.svg' %}" alt="Retina"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/compas.svg' %}" alt="Compas"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/map.svg' %}" alt="Map"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/chat.svg' %}" alt="Chat"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/mail.svg' %}" alt="Mail"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/book.svg' %}" alt="Book"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/calendar.svg' %}" alt="Calendar"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/paper-bag.svg' %}" alt="Pocket"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/clocks.svg' %}" alt="Watches"></div>
+          <div><img src="{% static 'flat-ui/img/icons/svg/loop.svg' %}" alt="Infinity-Loop"></div>
         </div>
       </div>
 
@@ -682,14 +683,14 @@
           <video class="video-js" preload="auto" poster="docs/assets/img/video/poster.jpg" data-setup="{}">
             <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
             <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
-          </video>
+          </video>flat-ui/
         </div> <!-- /video -->
       </div>
 
       <div class="row demo-tiles">
         <div class="col-xs-3">
           <div class="tile">
-            <img src="img/icons/svg/compas.svg" alt="Compas" class="tile-image big-illustration">
+            <img src="{% static 'flat-ui/img/icons/svg/compas.svg' %}" alt="Compas" class="tile-image big-illustration">
             <h3 class="tile-title">Web Oriented</h3>
             <p>100% convertable to HTML/CSS layout.</p>
             <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
@@ -698,7 +699,7 @@
 
         <div class="col-xs-3">
           <div class="tile">
-            <img src="img/icons/svg/loop.svg" alt="Infinity-Loop" class="tile-image">
+            <img src="{% static 'flat-ui/img/icons/svg/loop.svg' %}" alt="Infinity-Loop" class="tile-image">
             <h3 class="tile-title">Easy to Customize</h3>
             <p>Vector-based shapes and minimum of layer styles.</p>
             <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
@@ -707,7 +708,7 @@
 
         <div class="col-xs-3">
           <div class="tile">
-            <img src="img/icons/svg/pencils.svg" alt="Pensils" class="tile-image">
+            <img src="{% static 'flat-ui/img/icons/svg/pencils.svg' %}" alt="Pensils" class="tile-image">
             <h3 class="tile-title">Color Swatches</h3>
             <p>Easy to add or change elements. </p>
             <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
@@ -716,8 +717,8 @@
 
         <div class="col-xs-3">
           <div class="tile tile-hot">
-            <img src="img/icons/svg/ribbon.svg" alt="ribbon" class="tile-hot-ribbon">
-            <img src="img/icons/svg/chat.svg" alt="Chat" class="tile-image">
+            <img src="{% static 'flat-ui/img/icons/svg/ribbon.svg' %}" alt="ribbon" class="tile-hot-ribbon">
+            <img src="{% static 'flat-ui/img/icons/svg/chat.svg' %}" alt="Chat" class="tile-image">
             <h3 class="tile-title">Free for Share</h3>
             <p>Your likes, shares and comments helps us.</p>
             <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
@@ -729,7 +730,7 @@
       <div class="login">
         <div class="login-screen">
           <div class="login-icon">
-            <img src="img/login/icon.png" alt="Welcome to Mail App" />
+            <img src="{% static 'flat-ui/img/login/icon.png' %}" alt="Welcome to Mail App" />
             <h4>Welcome to <small>Mail App</small></h4>
           </div>
 
@@ -767,19 +768,19 @@
               </h6>
             </div>
             <div class="demo-browser-content">
-              <img src="docs/assets/img/demo/browser-pic-1.jpg" alt="" />
-              <img src="docs/assets/img/demo/browser-pic-2.jpg" alt="" />
-              <img src="docs/assets/img/demo/browser-pic-3.jpg" alt="" />
-              <img src="docs/assets/img/demo/browser-pic-4.jpg" alt="" />
-              <img src="docs/assets/img/demo/browser-pic-5.jpg" alt="" />
-              <img src="docs/assets/img/demo/browser-pic-6.jpg" alt="" />
+              <img src="{% static 'flat-ui/docs/assets/img/demo/browser-pic-1.jpg' %}" alt="" />
+              <img src="{% static 'flat-ui/docs/assets/img/demo/browser-pic-2.jpg' %}" alt="" />
+              <img src="{% static 'flat-ui/docs/assets/img/demo/browser-pic-3.jpg' %}" alt="" />
+              <img src="{% static 'flat-ui/docs/assets/img/demo/browser-pic-4.jpg' %}" alt="" />
+              <img src="{% static 'flat-ui/docs/assets/img/demo/browser-pic-5.jpg' %}" alt="" />
+              <img src="{% static 'flat-ui/docs/assets/img/demo/browser-pic-6.jpg' %}" alt="" />
             </div>
           </div>
         </div>
 
         <div class="col-xs-3">
           <div class="demo-download">
-            <img src="docs/assets/img/demo/html-icon.png" src="Free PSD" />
+            <img src="{% static 'flat-ui/docs/assets/img/demo/html-icon.png' %}" src="Free PSD" />
           </div>
 
           <a href="https://github.com/designmodo/Flat-UI/archive/master.zip" class="btn btn-primary btn-lg btn-block">Download</a>
@@ -809,7 +810,7 @@
             </p>
 
             <a class="footer-brand" href="http://designmodo.com" target="_blank">
-              <img src="docs/assets/img/footer/logo.png" alt="Designmodo.com" />
+              <img src="{% static 'flat-ui/docs/assets/img/footer/logo.png' %}" alt="Designmodo.com" />
             </a>
           </div> <!-- /col-xs-7 -->
 
@@ -830,13 +831,13 @@
       </div>
     </footer>
 
-    <script src="dist/js/vendor/jquery.min.js"></script>
-    <script src="dist/js/vendor/video.js"></script>
-    <script src="dist/js/flat-ui.min.js"></script>
-    <script src="docs/assets/js/application.js"></script>
+    <script src="{% static 'flat-ui/dist/js/vendor/jquery.min.js' %}"></script>
+    <script src="{% static 'flat-ui/dist/js/vendor/video.js' %}"></script>
+    <script src="{% static 'flat-ui/dist/js/flat-ui.min.js' %}"></script>
+    <script src="{% static 'flat-ui/docs/assets/js/application.js' %}"></script>
 
     <script>
-      videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
+      videojs.options.flash.swf = "{% static 'flat-ui/dist/js/vendors/video-js.swf' %}"
     </script>
   </body>
 </html>
